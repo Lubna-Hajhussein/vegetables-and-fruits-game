@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/street-food-stalls/50/6-512.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <!-- the nav bar -->
+    <div  class="navBar">
+        <img onclick="location.assign(`./../home.html`)" style="padding-left: 20px; cursor: pointer;" width="90px" hight="60px" src="https://cdn0.iconfinder.com/data/icons/street-food-stalls/50/6-512.png" />
+        <div style="position: absolute; top: 2%; left: 10%;">
+            <img width="60px" hight="60px" src="data:image/png;base64,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" />
+            <img width="60px" hight="60px" src="data:image/png;base64,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" />
+            <img width="60px" hight="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXDotMW_qFKhCZ_aX9kidAURIK0tUVKIieKg&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGuiDluXqmur2xam-D--6WYy7nxjIOKwdFLQ&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReinO3vgtDFjmKUCrrqsw47mrP8MhIX2hNsg&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNsbQrDm-JzxM8ME-dccgIeL8H1aIEFpyFTg&usqp=CAU" /> 
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmpWhhf-fBUZdOon52yc0MmgxZwLnEMz_dWg&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQPxlQ7TIP2Ycndzs-yBcM_xlNPWaisJHOYfw&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPvSe6Ign4GVm3Ue2ALa36rn0VYDLJv9V1KA&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScrPRiNa6eEwYGa5nHlrvJRZbSk6XRqox19g&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_LyyywufJJ1GS4PqkEXhYIK7WaEuO2sOrHw&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA_obEXboMCH3pcrRvabF9s0_TWWTbKMmjtg&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgFrvpnODuOru1hs7Kpa0xw57W65T7wjf7vQ&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTC4Wgfzho_0LZiOzOIAFOzzdizMwboKSC3pQ&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJF9JJdqllk2Sbs0TJjvN7JBu-lZWC-KUipg&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_HiQor6q0orApunXpk2lJ9gAYLTKfyD2mWQ&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6ScMCeHJhSdsRRLY5ULyqRCP5cdFE7heHug&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2bc1r7ZdjORpBR17vIPtY9pNDjUWW-_-Znw&usqp=CAU" />
+            <img width="60px" hight="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqCY6FEvf1FdMQl-ypp141O53D3MBLoU1PNw&usqp=CAU" />
+        </div>
+    </div>
+    </div>
+    <!-- images of the fruits div -->
+    <div style="position: fixed; left: 8%; right: 8%;">
+        <!--  strawberry-->
+        <div  class="firstImg">
+            <img id="strawberry" width="92px" src="https://freepngimg.com/thumb/strawberry/1-strawberry-png-images-thumb.png" >
+            </div>
+                <!--  mango-->
+        <div  class="secondImg">
+            <img id="mango" width="92px" src="https://freepngimg.com/thumb/mango/6-2-mango-png-hd-thumb.png" >
+            </div>
+
+
+</div>
+<div style="position:fixed; left: 15%; top: 15%;">
+
+<!--  apple-->
+<div class="firstImg">
+<img id="apple" width="92px" src="https://freepngimg.com/thumb/apple/9-apple-png-image-thumb.png" >
+</div >
+<!--  banana-->
+<div class="secondImg">
+<img id="banana" width="92px" src="https://freepngimg.com/thumb/banana/8-banana-png-image-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 22%; top: 15%;">
+<!--  grape-->
+<div class="firstImg">
+<img id="grape" width="92px" src="https://freepngimg.com/thumb/grape/4-grape-png-image-download-picture-thumb.png" >
+</div>
+<!--  lemon-->
+<div  class="secondImg">
+<img id="lemon" width="92px" src="https://freepngimg.com/thumb/lemon/4-lemon-png-image-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 30%; top: 15%;">
+<!--  pineapple-->
+<div class="firstImg">
+<img id="pineapple" width="92px" src="https://freepngimg.com/thumb/pineapple/1-pineapple-png-image-download-thumb.png" >
+</div>
+<!--  avocado-->
+<div class="secondImg">
+<img id="avocado" width="92px" src="https://freepngimg.com/thumb/avocado/1-2-avocado-png-clipart-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 38%; top: 15%;">
+<!--  cherry-->
+<div class="firstImg">
+<img id="cherry" width="92px" src="https://freepngimg.com/thumb/cherry/1-red-cherry-png-image-download-thumb.png" >
+</div>
+<!--  orange-->
+<div class="secondImg">
+<img id="orange" width="92px" src="https://freepngimg.com/thumb/orange/7-orange-png-image-download-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 46%; top: 15%;">
+<!--  guava-->
+<div class="firstImg">
+<img id="guava" width="92px" src="https://freepngimg.com/thumb/guava/2-2-guava-transparent-thumb.png" >
+</div>
+<!--  kiwi-->
+<div  class="secondImg">
+<img id="kiwi" width="92px" src="https://freepngimg.com/thumb/kiwi/3-kiwi-png-image-fruit-kiwi-png-pictures-download-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 54%; top: 15%;">
+<!--  blackberry-->
+<div class="firstImg">
+<img id="blackberry" width="92px" src="https://freepngimg.com/thumb/blackberry/4-2-blackberry-fruit-png-image-thumb.png" >
+</div>
+<!--  persimmon-->
+<div class="secondImg">
+<img id="persimmon" width="92px" src="https://freepngimg.com/thumb/persimmon/3-2-persimmon-png-file-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 62%; top: 15%;">
+<!--  watermelon-->
+<div class="firstImg">
+<img id="watermelon" width="92px" src="https://freepngimg.com/thumb/watermelon/3-watermelon-png-image-thumb.png" >
+</div>
+<!--  apricot-->
+<div class="secondImg">
+<img id="apricot" width="92px" src="https://freepngimg.com/thumb/apricot/2-2-apricot-free-download-png-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 70%; top: 15%;">
+<!--  peach-->
+<div class="firstImg">
+<img id="peach" width="92px" src="https://freepngimg.com/thumb/peach/6-peach-png-image-thumb.png" >
+</div>
+<!--  pear-->
+<div class="secondImg">
+<img id="pear" width="92px" src="https://freepngimg.com/thumb/pear/3-pear-png-image-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 78%; top: 15%;">
+<!--  pomegranate-->
+<div class="firstImg">
+<img id="pomegranate" width="92px" src="https://freepngimg.com/thumb/pomegranate/6-pomegranate-png-image-thumb.png" >
+</div>
+<!--  blueberry-->
+<div class="secondImg">
+<img id="blueberry" width="92px" src="https://freepngimg.com/thumb/blueberry/34216-7-blueberry-photos-thumb.png" >
+</div>
+</div>
+<div style="position:fixed; left: 86%; top: 15%;">
+<!--  papaya-->
+<div class="firstImg">
+<img id="papaya" width="92px" src="https://freepngimg.com/thumb/papaya/24520-1-papaya-photos-thumb.png" >
+</div>
+<!--  plum-->
+<div class="secondImg">
+<img id="plum" width="92px" src="https://freepngimg.com/thumb/plum/9-plum-png-image-thumb.png" >
+</div>
+</div>
+</div>
+
+<!-- fruits circles -->
+<div style="position: fixed; top: 40%;">
+
+    <!--  grape-->
+    <div id="grapeTarget" class="firstdroppable" >
+        <b class="Name" style="position: absolute; left: 30%;">grape</b>
+    </div>
+
+    <!--  avocado-->
+    <div id="avocadoTarget" class="droppable">
+        <b class="Name">avocado</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 9.5%;">
+    <!--  strawberry-->
+    <div id="strawberryTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 14%;">strawberry</b>
+    </div>
+    <!--  papaya-->
+    <div id="papayaTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 24%;">papaya</b>
+</div>
+<div style="position: fixed; top: 50%; left: 18.5%;">
+    <!--  pear-->
+    <div id="pearTarget" class="firstdroppable">
+            <b class="Name"  style="position: absolute; right: 1%; left: 34%;">pear</b>
+    </div>
+    <!--  watermelon-->
+    <div id="watermelonTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 14%;">watermelon</b>
+</div>
+<div style="position: fixed; top: 50%; left: 27.5%;">
+    <!--  apricot-->
+    <div id="apricotTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 28%;">apricot</b>
+    </div>
+    <!--  blackberry-->
+    <div id="blackberryTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 17%;">blackberry</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 36.5%;">
+    <!--  peach-->
+    <div id="peachTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 29%;">peach</b>
+    </div>
+    <!--  pomegranate-->
+    <div id="pomegranateTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 8%;">pomegranate</b>
+
+    </div>
+<div style="position: fixed; top: 50%; left: 45.5%;">
+    <!--  guava-->
+    <div id="guavaTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 31%;">guava</b>
+    </div>
+    <!--  cherry-->
+    <div id="cherryTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 29%;">cherry</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 54.5%;">
+    <!--  kiwi-->
+    <div id="kiwiTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 35%;">kiwi</b>
+    </div>
+    <!--  lemon-->
+    <div id="lemonTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 29%;">lemon</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 63.5%;">
+    <!--  orange-->
+    <div id="orangeTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 27%;">orange</b>
+    </div>
+    <!--  apple-->
+    <div id="appleTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 32%;">apple</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 72.5%;">
+    <!--  pineapple-->
+    <div id="pineappleTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 18%;">pineapple</b>
+    </div>
+    <!--  banana-->
+    <div id="bananaTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 26%;">banana</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 81.5%;">
+    <!--  mango-->
+    <div id="mangoTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 27%;">mango</b>
+    </div>
+    <!--  blueberry-->
+    <div id="blueberryTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 19%;">blueberry</b>
+    </div>
+<div style="position: fixed; top: 50%; left: 90.5%;">
+    <!--  plum-->
+    <div id="plumTarget" class="firstdroppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 32%;">plum</b>
+    </div>
+    <!--  persimmon-->
+    <div id="persimmonTarget" class="droppable">
+        <b class="Name" style="position: absolute; right: 1%; left: 12%;">persimmon</b>
+   </div>
+    <script src="data.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

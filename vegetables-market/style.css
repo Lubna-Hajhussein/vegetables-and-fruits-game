@@ -1,0 +1,79 @@
+.navBar {
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.vegImgs{
+    font-family: "Open Sans Condensed", arial, sans;
+    width: 70px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 0px;
+    border: 3px solid black;
+    height: 70px;
+    cursor: pointer;
+}
+
+#homeBody{
+	background-image: url("https://media.gettyimages.com/photos/fresh-fruits-and-vegetables-food-frame-over-white-background-with-picture-id820335042?b=1&k=6&m=820335042&s=612x612&w=0&h=EsAJj_Gj24HiqWQq9gb9lB9LSxXWI-Q9Ki03znbWbNE=");
+	background-repeat: no-repeat;
+    background-size:1390px  675px;
+
+}
+
+#dropdown {
+    border: 3px outset rgb(59, 55, 55); 
+    color: rgb(231, 44, 44);
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    font-size:30px;
+ 
+    background-size:250px  50px;
+  }
+
+
+  /* test modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

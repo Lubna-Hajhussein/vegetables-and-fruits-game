@@ -1,0 +1,98 @@
+.navBar {
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.vegImgs{
+    font-family: "Open Sans Condensed", arial, sans;
+    width: 220px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 0px;
+    border: 3px solid black;
+    height: 70px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.droppable{
+    font-family: "Open Sans Condensed", arial, sans;
+    width: 70px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 20px; 
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 300px;
+    border: 3px solid #7FFF00;
+    height: 70px;
+    cursor: pointer;
+    position: fixed;
+    top: 70%;
+}
+
+.firstdroppable{
+    font-family: "Open Sans Condensed", arial, sans;
+    width: 70px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    padding: 20px; 
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 300px;
+    border: 3px solid #7FFF00;
+    height: 70px;
+    cursor: pointer;
+    position: fixed;
+    top: 30%;
+}
+
+#homeBody{
+	background-image: url("https://image.freepik.com/free-photo/herbs-vegetables-white-background_23-2147828984.jpg");
+	background-repeat: no-repeat;
+    background-size:1390px  675px;
+
+}
+
+#dropdown {
+    border: 3px outset rgb(59, 55, 55); 
+    color: rgb(231, 44, 44);
+    background-color: yellow;
+    width: 150px;
+    height: 40px;
+    font-size:20px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwit1ZgFezmB2FYfJYVA2Miw6MVJDWwxuoIA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size:250px  50px;
+  }
+
+.firstImg{
+    position: fixed;  
+    top: 27%;
+    cursor: pointer;
+}
+
+.secondImg{
+    position: fixed;  
+    top: 62%;
+    cursor: pointer;
+
+}
+
+.Name{
+   padding-right: 54px;
+   padding-top: 24px;
+   padding-left: -19px;
+   color: #00008B;
+   position: absolute;
+   size: 20px;
+}

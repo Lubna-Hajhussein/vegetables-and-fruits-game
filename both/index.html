@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/street-food-stalls/50/6-512.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body id="bothBody" >
+   
+    <!-- the nav bar -->
+    <div  class="navBar">
+        <img onclick="location.assign(`./../home.html`)" style="padding-left: 20px; cursor: pointer;" width="90px" hight="60px" src="https://cdn0.iconfinder.com/data/icons/street-food-stalls/50/6-512.png" />
+       
+        <img height="90px" width="95px" src="https://freepngimg.com/thumb/tomato/6-tomato-png-image-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/orange/19-orange-png-image-download-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/cabbage/6-cabbage-png-image-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/strawberry/1-strawberry-png-images-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/eggplant/14-eggplant-png-images-download-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/kiwi/3-kiwi-png-image-fruit-kiwi-png-pictures-download-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/mushroom/2-2-mushroom-png-picture-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/pineapple/11-pineapple-png-image-download-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/broccoli/2-broccoli-png-image-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/apple/2-red-apple-png-image-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/salad/13-salad-leaf-png-image-thumb.png" >
+         <img height="90px" width="95px" src="https://freepngimg.com/thumb/lemon/13-green-lemon-png-image-thumb.png" >
+        
+        </div>
+        <p id="gusses" style="color: yellow; position: absolute; left: 75%; right: 0%; font-size: xxx-large; top: 30%;"></p>
+        <p id="puzzle" style="color: yellow; position: absolute; left: 80%; right: 0%; font-size: xxx-large; top: 50%;"></p>
+         <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="vegetablesWon" style="font-size: xxx-large">&times;</p>
+          <p id="vegetablesLost" style="font-size: xxx-large">&times;</p>
+          <p id="timeTaken" style="font-size: xxx-large">&times;</p>
+        </div>
+      </div>
+     
+        <!-- apple -->
+    <div hidden id="apple">
+        <img style="position: absolute; left: 30%; right: 50%; top: 16%;" width="460px" hight="460px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQPxlQ7TIP2Ycndzs-yBcM_xlNPWaisJHOYfw&usqp=CAU" />
+        <img style="position: absolute; left: 38%; right: 50%; top: 45%;" src="https://freepngimg.com/thumb/apple/9-apple-png-image-thumb.png" >     
+    </div>
+    <!-- cherry -->
+     <div hidden id="cherry">
+             <img style="position: absolute; left: 38%; right: 50%; top: 16%;" width="460px" hight="460px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_LyyywufJJ1GS4PqkEXhYIK7WaEuO2sOrHw&usqp=CAU" >
+             <img  style="position: absolute; left: 45%; right: 50%; top: 55%;" src="https://freepngimg.com/thumb/cherry/1-red-cherry-png-image-download-thumb.png" >
+    </div>
+    <!-- tomato -->
+    <div hidden id="tomato">
+            <img style="position: absolute; left: 28%; right: 50%; top: 16%;" width="460px" hight="460px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXDotMW_qFKhCZ_aX9kidAURIK0tUVKIieKg&usqp=CAU" >
+            <img style="position: absolute; left: 34%; right: 50%; top: 37%;" width="280px" height="280px" src="http://pngimg.com/uploads/tomato/tomato_PNG12599.png" >
+    </div>
+    <button id="next" height="50px" width="50px" style="border:  rgb(33, 69, 231); color:black; background-color: rgb(33, 69, 231); cursor: pointer; position: absolute; left: 79%; right: 0%; font-size: xxx-large; top: 69%;">Next</button>
+    <script src="home.js"></script>
+</body>
+</html>
